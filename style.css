@@ -1,0 +1,67 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Prosty styl dla modala */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
