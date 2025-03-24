@@ -1,5 +1,4 @@
 <?php
-// delete.php
 header('Content-Type: application/json');
 
 $servername = "localhost";

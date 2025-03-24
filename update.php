@@ -1,5 +1,4 @@
 <?php
-// update.php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,13 +9,13 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$id = $_POST['edit-id'];
-$flag = $_POST['edit-flaga'];
-$nominal = $_POST['edit-nominal'];
-$stupka = $_POST['edit-stupka'];
-$rok = $_POST['edit-rok'];
-$katalog = $_POST['edit-katalog'];
-$country = $_POST['edit-country'];
+$id = $_POST['id'];
+$flag = $_POST['flaga'];
+$nominal = $_POST['nominal'];
+$stupka = $_POST['stupka'];
+$rok = $_POST['rok'];
+$katalog = $_POST['katalog'];
+$country = $_POST['country'];
 
 $sql = "UPDATE dane SET Flaga='$flag', Nominal='$nominal', Katalog='$katalog', Stupka='$stupka', Rok='$rok', Kraj='$country' WHERE ID='$id'";
 

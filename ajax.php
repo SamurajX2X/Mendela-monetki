@@ -5,11 +5,15 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "imiona";
+// mysqli bo prosty projekt i wiadomo z basic mysql wiec PDO raczej nie jest potrzebne 
+
+// do wszsytkich stosowane
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die(json_encode(["error" => "Connection failed: " . mysqli_connect_error()]));
 }
+
 
 $sql = "SELECT ID, Flaga, Nominal, Katalog, Stupka, Rok, Kraj FROM dane";
 $result = mysqli_query($conn, $sql);
@@ -21,7 +25,7 @@ $currency_sql = "SELECT Stupki FROM Stupki";
 $currency_result = mysqli_query($conn, $currency_sql);
 
 
-// Zbieramy wszystkie flagi i stopy z bazy
+//  wszystkie flagi i stupki z bazy
 $flags = [];
 $stopy = [];
 $data = [];
